@@ -1,10 +1,7 @@
 # Deep Learning surrogate models for speeding up JULES INFERNO forecasts
 
 ## About the project
-Wildfire models play a crucial role in preventing, detecting and fighting wildfires. JULES-INFERNO is an empirical model forecasting wildfire emissions and area burnt on a global scale. However, because of the the high data dimensionality and system complexity, JULES-INFERNO's computational costs make it challenging to apply to fire risk forecasting with unseen initial conditions. Typically, running JULES-INFERNO for 30 years of prediction will take roughly a week on High Performance Computing (HPC) clusters. To tackle this bottleneck, two data-driven models are built in this work based on Deep Learning techniques to surrogate the JULES-INFERNO model and speed up global wildfire forecasting.
-More precisely, these machine learning models take global temperature, vegetation density, soil moisture and previous forecasts as inputs to predict the future global area burnt on an iterative basis.
- Average Error per Pixel (AEP) and Structural Similarity Index Measure (SSIM) are used as metrics to evaluate the performance of the proposed surrogate models. A fine tuning strategy is also proposed in this work to improve the algorithm performance for unseen scenarios.
-Numerical results show a strong performance of the proposed models, in terms of both computational efficiency (less than 20 seconds for 30 years of prediction on a laptop CPU) and prediction accuracy (with AEP under 0.3\% and SSIM over 98\% compared to the outputs of JULES-INFERNO).
+Wildfire models are pivotal in the prevention, detection, and mitigation of wildfires. JULES-INFERNO, an empirical model forecasting wildfire emissions and burnt areas globally, faces challenges due to high data dimensionality and system complexity, making its application to fire risk forecasting with unseen initial conditions arduous. Running JULES-INFERNO for a 30-year prediction typically consumes about a week on High-Performance Computing (HPC) clusters. To address this computational bottleneck, this study introduces two data-driven models employing Deep Learning techniques to serve as surrogates for the JULES-INFERNO model, significantly accelerating global wildfire forecasting.
 
 ## Getting Started
 
